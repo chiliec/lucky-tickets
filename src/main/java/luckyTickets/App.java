@@ -1,16 +1,21 @@
 package luckyTickets;
 
+import java.util.Iterator;
+
 public class App {
+    private static Iterator<Lucky> iterator = new LuckyIterator();
+
     public static void main(String[] args) {
-        for (int i = 0; i <= 999999; i++) {
-            if (isLuckyTicket(i)) {
-                System.out.println(i);
+        long counter = 0L;
+        while (iterator.hasNext()) {
+            Lucky next = iterator.next();
+            if (next.isLucky()) {
+                counter++;
+                System.out.println(next);
             }
         }
-    }
-
-    private static boolean isLuckyTicket(int ticketNumbers) {
-        byte[] c = String.format("%06d", ticketNumbers).getBytes();
-        return c[0]+c[1]+c[2]==c[3]+c[4]+c[5];
+        System.out.println("All lucky tickets count is " + counter);
     }
 }
+
+
