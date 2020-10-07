@@ -3,7 +3,7 @@ package luckyTickets;
 import java.util.Iterator;
 
 public class App {
-    private static Iterator<Lucky> iterator = new LuckyIterator();
+    private static Iterator<Lucky> iterator = new AnotherLuckyIterator();
 
     public static void main(String[] args) {
         long counter = 0L;
