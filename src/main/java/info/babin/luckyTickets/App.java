@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext("info.babin.luckyTickets");
         Integer ticketLength = context.getBean("ticketLength", Integer.class);
-        System.out.println(ticketLength);
+        System.out.println("Ticket length: " + ticketLength);
 
         long counter = 0L;
         Predicate<Lucky> predicate = lucky -> lucky.isLucky();
