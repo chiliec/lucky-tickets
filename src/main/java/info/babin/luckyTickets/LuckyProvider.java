@@ -1,4 +1,4 @@
-package luckyTickets;
+package info.babin.luckyTickets;
 
 /**
  * Предоставляет метод, возвращающий объекты, реализующие интерфейс {@link Lucky}

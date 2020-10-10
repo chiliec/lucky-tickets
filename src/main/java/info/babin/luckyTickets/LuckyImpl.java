@@ -1,4 +1,4 @@
-package luckyTickets;
+package info.babin.luckyTickets;
 
 /**
  * Предоставляет метод определения является ли объект "счастливым"

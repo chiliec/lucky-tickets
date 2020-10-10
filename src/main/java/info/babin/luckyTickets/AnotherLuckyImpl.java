@@ -1,4 +1,4 @@
-package luckyTickets;
+package info.babin.luckyTickets;
 
 public class AnotherLuckyImpl implements Lucky {
     private long numbers;
