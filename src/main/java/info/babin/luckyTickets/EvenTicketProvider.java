@@ -1,12 +1,12 @@
 package info.babin.luckyTickets;
 
-public class AnotherTicketProvider implements LuckyProvider {
+public class EvenTicketProvider implements LuckyProvider {
     /**
      * @param n номер объекта кандидата
      * @return Lucky
      */
     @Override
     public Lucky get(long n) {
-        return new AnotherLuckyImpl(n);
+        return new EvenLuckyImpl(n);
     }
 }

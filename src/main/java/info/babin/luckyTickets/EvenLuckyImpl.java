@@ -1,9 +1,9 @@
 package info.babin.luckyTickets;
 
-public class AnotherLuckyImpl implements Lucky {
+public class EvenLuckyImpl implements Lucky {
     private long numbers;
 
-    AnotherLuckyImpl(long numbers) {
+    EvenLuckyImpl(long numbers) {
         this.numbers = numbers;
     }
 

@@ -11,6 +11,6 @@ public class AppConfig {
 
     @Bean(name = "ticketLength")
     public Integer getTicketLength() {
-        return 6;
+        return 4;
     }
 }

@@ -1,7 +1,10 @@
 package info.babin.luckyTickets;
 
+import org.springframework.stereotype.Service;
+
 import java.util.Iterator;
 
+@Service()
 public class LuckyIterator implements Iterator<Lucky> {
     private static long MAX = 1_000_000;
     private LuckyProvider provider = new LuckyTicketProvider();
