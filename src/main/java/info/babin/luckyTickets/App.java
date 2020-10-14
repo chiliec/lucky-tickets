@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 public class App {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext("info.babin.luckyTickets");
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Integer ticketLength = context.getBean("ticketLength", Integer.class);
         System.out.println("Число цифр в билете: " + ticketLength);
         Supplier<Long> counter = context.getBean("evenTicketCounter", Supplier.class);

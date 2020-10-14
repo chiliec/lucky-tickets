@@ -3,7 +3,7 @@ package info.babin.luckyTickets;
 public class EvenLuckyImpl implements Lucky {
     private long numbers;
 
-    EvenLuckyImpl(long numbers) {
+    public EvenLuckyImpl(long numbers) {
         this.numbers = numbers;
     }
 
