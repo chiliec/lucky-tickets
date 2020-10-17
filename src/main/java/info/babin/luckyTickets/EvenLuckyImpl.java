@@ -4,6 +4,12 @@ public class EvenLuckyImpl implements Lucky {
     private long numbers;
 
     public EvenLuckyImpl(long numbers) {
+        if (numbers < 0) {
+            throw new IllegalArgumentException("Попытка создать билет с отрицательным номером!");
+        }
+        if (numbers >= 10000) {
+            throw new IllegalArgumentException("Попытка создать билет со слишком большим номером!");
+        }
         this.numbers = numbers;
     }
 
