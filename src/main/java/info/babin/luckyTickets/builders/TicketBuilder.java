@@ -15,12 +15,7 @@ public class TicketBuilder implements MealTicketBuilder {
     /**
      * Признак использования строителя
      */
-    private boolean isUsed;
-
-    @PostConstruct
-    void init() {
-        isUsed = false;
-    }
+    private boolean isUsed = false;
 
     @Override
     public Lucky build() {
