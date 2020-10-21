@@ -1,5 +1,7 @@
 package info.babin.luckyTickets;
 
+import java.util.function.Predicate;
+
 /**
  * Предоставляет метод определения является ли объект "счастливым"
  */
@@ -18,6 +20,17 @@ class LuckyImpl implements Lucky {
     @Override
     public String toString() {
         return String.valueOf(numbers);
+    }
+
+    /**
+     * Стандартный метод шаблона "Посетитель"
+     *
+     * @param visitor новая функциональность
+     * @return результат вычислений
+     */
+    @Override
+    public boolean accept(Predicate< HasOrdinal > visitor) {
+        return visitor.test(this);
     }
 }
 

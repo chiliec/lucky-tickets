@@ -11,7 +11,7 @@ public class App {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Integer ticketLength = context.getBean("ticketLength", Integer.class);
         System.out.println("Число цифр в билете: " + ticketLength);
-        Supplier<Long> counter = context.getBean("evenTicketCounter", Supplier.class);
+        Supplier<Long> counter = context.getBean("divisibleBySevenMealTicketCounter", Supplier.class);
         System.out.println("Счастливых билетов " + counter.get());
     }
 }
